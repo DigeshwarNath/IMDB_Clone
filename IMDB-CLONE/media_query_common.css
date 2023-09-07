@@ -1,0 +1,154 @@
+@media screen and (max-width: 1440px) {
+    header {
+        left: 0;
+    }
+
+    .container {
+        left: 0;
+    }
+
+    .search_result {
+        left: 134px;
+    }
+
+    .favlist,
+    .watchlist {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .watch_btn {
+        width: 50px;
+    }
+
+    header::after {
+        right: 235px;
+    }
+
+    #fetch_input {
+        width: calc(100% - 525px);
+        right: 387px;
+    }
+
+    .poster {
+        height: calc((100vw * (1/4)) + 7.5vw);
+    }
+
+    .details p {
+        font-size: 70%;
+        line-height: 100%;
+    }
+
+    .search_result {
+        width: calc(100vw - 340px);
+        height: calc(((100vw - 340px) * (3/6)) + 15vw);
+    }
+
+    .search_result>.poster {
+        width: calc((100% - 36px)/6);
+        min-height: 190px;
+        max-height: 48%;
+
+    }
+
+    .search_result>.poster>button {
+        height: 15px;
+        border-radius: 4px;
+    }
+
+    .search_result>.poster>.btn_1 {
+        bottom: 18px;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .fav_btn {
+        width: 50px;
+    }
+
+    .watch_btn {
+        right: 65px;
+    }
+
+    header::after {
+        right: 145px;
+    }
+    .poster {
+        height: calc((100vw * (1/4)) + 8vw);
+    }
+
+    #fetch_input {
+        width: calc(100% - 435px);
+        right: 300px;
+    }
+
+    button {
+        font-size: 55%;
+    }
+
+    .search_result {
+        width: calc(100vw - 20px);
+        height: calc((100vw * (3/6)) + 18vw);
+        left: 0;
+        margin: 0 10px;
+    }
+
+    .search_result>.poster {
+        width: calc((100% - 30px)/6);
+        min-height: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header::after {
+        display: none;
+    }
+
+    header::before {
+        top: 10px;
+        left: 5px;
+        width: 55px;
+        background-repeat: no-repeat;
+    }
+
+    #fetch_input {
+        width: calc(100% - 210px);
+        left: 77px;
+    }
+
+    .poster {
+        min-width: calc((100% - 20px)/4);
+        height: calc((100vw * (3/8)) + 11vw);
+    }
+
+    .search_result {
+        height: calc((100vw * (3/4)) + 23vw);
+    }
+
+    .search_result>.poster {
+        width: calc((100% - 25px)/3);
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    button {
+        height: 15px;
+    }
+
+    .btn_1 {
+        bottom: 19px;
+    }
+
+    .poster {
+        min-width: calc((100% - 15px)/3);
+        height: calc((100vw * 0.5) + 48px);
+        min-height: 235px;
+    }
+
+    .search_result {
+        height: 125vw;
+    }
+}
